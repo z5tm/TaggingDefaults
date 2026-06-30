@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <TargetFramework>net481</TargetFramework>
+        <LangVersion>latest</LangVersion>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <IncludeBuildOutput>false</IncludeBuildOutput>
+        <SuppressDependenciesWhenPacking>true</SuppressDependenciesWhenPacking>
+    </PropertyGroup>
+    
+    <PropertyGroup>
+        <PackageId>RueITaggingDefaults</PackageId>
+        <Authors>z5tm</Authors>
+        <Description>A group of standardized RueI tags to coordinate some plugins.</Description>
+        <RepositoryUrl>https://github.com/z5tm/TaggingDefaults</RepositoryUrl>
+        <PackageLicenseExpression>Unlicense</PackageLicenseExpression>
+        <Version>1.0.0</Version>
+        <IsPackable>true</IsPackable>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
+    </PropertyGroup>
+    
+    <ItemGroup>
+        <PackageReference Include="RueI" Version="3.1.2"/>
+    </ItemGroup>
+    
+    <ItemGroup><None Include="README.md" Pack="true" PackagePath="\" /></ItemGroup>
+</Project>
